@@ -10,16 +10,16 @@
 </head>
 <body>
         <div class="container">
-            <div class="szoveg">DISPLAY_PLACEHOLDER</div>
+            <div class="szoveg" id="szoveg">DISPLAY_PLACEHOLDER</div>
         </div>
         <div class="container2">
-                <button class="nyilfel">↑</button>
-                <button class=>←</button>
-                <button class=>↓</button>
-                <button class=>→</button>
+                <button class="nyilfel" onkeydown="check(random(1,4),1)">↑</button>
+                <button onkeydown="check(random(1,4),2)">←</button>
+                <button onkeydown="check(random(1,4),3)">↓</button>
+                <button onkeydown="check(random(1,4),4)">→</button>
         </div>
             <div class="container">
-                <button class="start">START</button>
+                <button class="start" onclick="start(random(1,4))">START</button>
                 <button class="stop">STOP</button>
             </div>
         </div>
