@@ -1,0 +1,67 @@
+.container{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    padding-bottom: 10px;
+}
+.container2{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    padding-bottom: 10px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+button{
+    padding-top: 10px;
+    padding-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size:x-large;
+    height: 50px;
+    width: 55px;
+    cursor: pointer;
+}
+button:hover{
+    background-color:gray;
+    transition: 200ms;
+}
+.szoveg{
+    height: 5dvh;
+    width: 30%;
+    border: solid black 1px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.start{
+    background-color:green ;
+    color:white;
+    width: 100px;
+    height: 50px;
+    border-radius: 15px;
+    border: none;
+}
+.start:hover{
+    background-color: greenyellow;
+    transition: 200ms;
+}
+.stop{
+    background-color:red ;
+    color:white;
+    width: 100px;
+    height: 50px;
+    border-radius: 15px;
+    border: none;
+}
+.stop:hover{
+    background-color: rgb(255, 88, 88)  ;
+}
+.nyilfel{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
