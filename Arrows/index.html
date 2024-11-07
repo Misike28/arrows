@@ -2,27 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arrows</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
 <body>
+ 
         <div class="container">
             <div class="szoveg" id="szoveg">DISPLAY_PLACEHOLDER</div>
         </div>
         <div class="container2">
-                <button class="nyilfel" onkeydown="check(random(1,4),1)">↑</button>
-                <button onkeydown="check(random(1,4),2)">←</button>
-                <button onkeydown="check(random(1,4),3)">↓</button>
-                <button onkeydown="check(random(1,4),4)">→</button>
+                <button id="fel" class="nyilfel" onkeydown="check()" onclick="check2(1)">↑</button>
+                <button id="bal" onkeydown="check()" onclick="check2(2)">←</button>
+                <button id="le" onkeydown="check()" onclick="check2(3)">↓</button>
+                <button id="jobb" onkeydown="check()" onclick="check2(4)">→</button>
         </div>
-            <div class="container">
-                <button class="start" onclick="start(random(1,4))">START</button>
-                <button class="stop">STOP</button>
+        
+            <div class="container2">
+                <button class="start" onclick="start() ">START</button>
+                <button class="stop" onclick="stop()">STOP</button>
             </div>
-        </div>
-    </div>
+            <div class="container"><p>Timer: <span id="ido"></span> másodperc</p></div>
 </body>
 </html>
+
