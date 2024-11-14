@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <img src="calc.png" alt="calc.png" class="toggle" onclick="toggle()">
+    <span class="off" id="calc">
+    <div class="grid-container">
+        <div class="felso"><span class="bal">Calculator</span>  <span class="jobb"> <span class="min" onclick="minimize()">_</span>  <span class="max" onclick="maximize()">🗖</span><span class="close" onclick="bezar()">×</span></span></div>
+        <div class="felso"><span class="display" id="display"></span></div>
+        <div class="felso"><span class="input" id="input">0</span></div>
+        <div class="grid-item szurk" onclick="fullclear('')" onkeydown="check()" id="c">C</div>
+        <div class="grid-item szurk" onclick="torles('')" id="ce">CE</div>
+        <div class="grid-item szurk" onclick="sqr('')" id="x2">X<sup>2</sup></div>
+        <div class="grid-item szurk" onclick="muvelet('÷',false)" id="div">÷</div>
+        <div class="grid-item fek" onclick="szam(7)" id="7">7</div>
+        <div class="grid-item fek" onclick="szam(8)" id="8">8</div>
+        <div class="grid-item fek" onclick="szam(9)" id="9">9</div>
+        <div class="grid-item szurk" onclick="muvelet('×',false)" id="mul">×</div>
+        <div class="grid-item fek" onclick="szam(4)" id="4">4</div>
+        <div class="grid-item fek" onclick="szam(5)" id="5">5</div>
+        <div class="grid-item fek" onclick="szam(6)" id="6">6</div>
+        <div class="grid-item szurk" onclick="muvelet('-',false)" id="min">-</div>
+        <div class="grid-item fek" onclick="szam(1)" id="1">1</div>
+        <div class="grid-item fek" onclick="szam(2)" id="2">2</div>
+        <div class="grid-item fek" onclick="szam(3)" id="3">3</div>
+        <div class="grid-item szurk" onclick="muvelet('+',false)" id="plus">+</div>
+        <div class="grid-item fek" onclick="plusminus()" id="plusminus">±</div>
+        <div class="grid-item fek" onclick="szam(0)" id="0">0</div>
+        <div class="grid-item fek" onclick="tiz()" id=".">.</div>
+        <div class="grid-item egyen" onclick="szamol()" id="egyen">=</div>
+      </div>
+      </span>
+
+
+</body>
+</html>
